@@ -56,19 +56,16 @@
 }
 
 .about {
-    padding: 2.5rem;
     text-align: center;
 }
 
 .about__title {
     color: #8D0606;
     font-family: Pacifico, cursive;
-    font-size: 3.1875rem;
 }
 
 .about__description {
     color: #595959;
-    font-size: 1.75rem;
     font-weight: 100;
 }
 
@@ -76,7 +73,6 @@
     background: #E5E5E5;
     display: flex;
     flex-wrap: wrap;
-    padding: 5rem 0 0 5rem;
 }
 
 .recipe {
@@ -209,6 +205,36 @@
     .banner__img {
         height: calc(100vh - 51px);
     }
+
+    .about {
+        padding: 2.5rem 1rem;
+    }
+
+    .about__title {
+        font-size: 2rem;
+    }
+
+    .about__description {
+        font-size: 1.3rem;
+    }
+
+    .recipe {
+        margin-right: 1rem;
+        width: 100%;
+    }
+
+    .recipes {
+        padding: 5rem 0 0 1rem;
+    }
+
+    .people {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .person {
+        margin-bottom: 2rem;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -228,5 +254,44 @@
     .banner__img {
         height: calc(100vh - 72px);
     }
-    
+
+    .about {
+        padding: 2.5rem;
+    }
+
+    .about__title {
+        font-size: 3.1875rem;
+    }
+
+    .about__description {
+        font-size: 1.75rem;
+    }
+
+    .recipe {
+        margin-right: 2.5rem;
+        width: calc(33.33% - 2.5rem);
+    }
+
+    .recipes {
+        padding: 5rem 0 0 2.5rem;
+    }
+
+    .people {
+        flex-direction: row;
+    }
+
+    .person {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .recipe {
+        margin-right: 5rem;
+        width: calc(25% - 5rem);
+    }
+
+    .recipes {
+        padding: 5rem 0 0 5rem;
+    }
 }
